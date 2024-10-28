@@ -8,22 +8,17 @@
 }
 </route>
 <template>
- <view class="pt-24">
-  <wd-button>主要按钮</wd-button>
-<wd-button type="success">成功按钮</wd-button>
-<wd-button type="info">信息按钮</wd-button>
-<wd-button type="warning">警告按钮</wd-button>
-<wd-button type="error">危险按钮</wd-button>
-<view class="border border-red-500 text-amber"> text</view>
- </view>
+  <view class="flex flex-col pt-176rpx justify-between items-center text-amber">
+    this is home page
+  </view>
 </template>
 
-<script lang="ts" setup>
-import PLATFORM from '@/utils/platform'
+<script setup>
+// import PLATFORM from '@/utils/platform'
 
-defineOptions({
-  name: 'Home',
-})
+// defineOptions({
+//   name: 'Home',
+// })
 
 // 获取屏幕边界到安全区域距离
 const { safeAreaInsets } = uni.getSystemInfoSync()
