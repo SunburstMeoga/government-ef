@@ -39,6 +39,14 @@
   },
   "pages": [
     {
+      "path": "pages/index/rank",
+      "type": "home",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "积分排名"
+      }
+    },
+    {
       "path": "pages/index/index",
       "type": "home",
       "style": {
