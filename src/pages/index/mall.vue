@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="w-686rpx h-screen flex flex-wrap justify-between pb-200rpx">
+        <div class="w-686rpx flex flex-wrap justify-between pb-200rpx">
             <div class="w-329rpx mb-28rpx" v-for="(item, index) in 10" :key="index">
                 <Product />
             </div>
