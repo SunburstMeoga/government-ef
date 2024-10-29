@@ -12,7 +12,8 @@
             <img src="../../../static/home/product.png" alt="">
         </div>
         <div class="flex h-128rpx flex-col justify-center items-center w-full">
-            <div class="text-slate-9 text-28rpx font-semibold w-276rpx mb-12rpx">商品title</div>
+            <div class="text-slate-9 text-28rpx font-semibold w-276rpx mb-12rpx truncate">商品title商品title商品title商品title
+            </div>
             <div class="flex w-276rpx items-center justify-between">
                 <div class="text-gray-4 text-24rpx">仅剩10份</div>
                 <div class="flex items-center justify-end">
