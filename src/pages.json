@@ -39,11 +39,10 @@
   },
   "pages": [
     {
-      "path": "pages/index/rank",
+      "path": "pages/index/study_result",
       "type": "home",
       "style": {
-        "navigationStyle": "custom",
-        "navigationBarTitleText": "积分排名"
+        "navigationBarTitleText": "学习成长"
       }
     },
     {
@@ -60,6 +59,18 @@
       "style": {
         "navigationBarTitleText": "关于"
       }
+    },
+    {
+      "path": "pages/index/learning_growth",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/points_record",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/rank",
+      "type": "page"
     }
   ],
   "subPackages": []
