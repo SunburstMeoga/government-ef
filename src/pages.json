@@ -39,11 +39,11 @@
   },
   "pages": [
     {
-      "path": "pages/index/cabin_distribution",
+      "path": "pages/index/carbon_rank",
       "type": "home",
       "layout": "default",
       "style": {
-        "navigationBarTitleText": "小屋分布"
+        "navigationBarTitleText": "减碳排名"
       }
     },
     {
@@ -58,11 +58,11 @@
       "type": "page"
     },
     {
-      "path": "pages/index/carbon_details",
+      "path": "pages/index/cabin_distribution",
       "type": "page"
     },
     {
-      "path": "pages/index/carbon_rank",
+      "path": "pages/index/carbon_details",
       "type": "page"
     },
     {
