@@ -1,6 +1,14 @@
 <!-- 使用 type="home" 属性设置首页，其他页面不需要设置，默认为page；推荐使用json5，更强大，且允许注释 -->
 
-
+<route lang="json5" type="home">
+  {
+    layout: 'default',
+    style: {
+      navigationBarTitleText: '首页',
+      navigationStyle: 'custom'
+    },
+  }
+  </route>
 <template>
   <view class="flex flex-col justify-between items-center relative">
     <view class="w-full h-screen absolute inset-0">
@@ -40,7 +48,7 @@
           </view>
         </view>
       </view>
-      <view class="ml-42rpx w-120rpx h-124rpx relative z-4">
+      <view class="ml-42rpx w-120rpx h-124rpx relative z-4" @click="toMall">
         <image src="../../static/home/mall.png" />
       </view>
     </view>
@@ -78,6 +86,11 @@ const typeItems = ref([
   { title: '修复生态', img: '../../static/home/type4.png' },
   { title: '低碳活动', img: '../../static/home/type5.png' },
 ])
+let toMall = () => {
+  uni.navigateTo({
+    url: '/pages/index/mall'
+  })
+}
 onLoad(() => {
   uni.getSystemInfo({
     success: (e) => {

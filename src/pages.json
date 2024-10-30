@@ -39,18 +39,19 @@
   },
   "pages": [
     {
-      "path": "pages/index/carbon_rank",
+      "path": "pages/index/index",
       "type": "home",
       "layout": "default",
       "style": {
-        "navigationBarTitleText": "减碳排名"
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
       }
     },
     {
       "path": "pages/about/about",
       "type": "page",
       "style": {
-        "navigationBarTitleText": "关于"
+        "navigationBarTitleText": "我的"
       }
     },
     {
@@ -66,11 +67,11 @@
       "type": "page"
     },
     {
-      "path": "pages/index/exchange_record",
+      "path": "pages/index/carbon_rank",
       "type": "page"
     },
     {
-      "path": "pages/index/index",
+      "path": "pages/index/exchange_record",
       "type": "page"
     },
     {
@@ -95,7 +96,10 @@
     },
     {
       "path": "pages/index/mall",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "积分商城"
+      }
     },
     {
       "path": "pages/index/points_record",
