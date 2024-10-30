@@ -39,18 +39,10 @@
   },
   "pages": [
     {
-      "path": "pages/index/mall",
+      "path": "pages/index/leave_message",
       "type": "home",
       "style": {
-        "navigationBarTitleText": "积分商城"
-      }
-    },
-    {
-      "path": "pages/index/index",
-      "type": "home",
-      "style": {
-        "navigationStyle": "custom",
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "留言反馈"
       }
     },
     {
@@ -61,11 +53,27 @@
       }
     },
     {
+      "path": "pages/index/exchange_record",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/index",
+      "type": "page"
+    },
+    {
       "path": "pages/index/learning_growth",
       "type": "page"
     },
     {
+      "path": "pages/index/mall",
+      "type": "page"
+    },
+    {
       "path": "pages/index/points_record",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/product_detials",
       "type": "page"
     },
     {

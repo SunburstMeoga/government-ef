@@ -1,10 +1,3 @@
-<route lang="json5" type="home">
-{
-  style: {
-    navigationBarTitleText: '积分商城',
-  },
-}
-</route>
 <template>
     <div class="flex flex-col justify-between items-center relative min-h-screen">
         <!-- <div class="test fixed left-0" :style="`border:1px solid red; top:${barHeight}rpx; height: ${navbar + 6}rpx;`">

@@ -1,22 +1,13 @@
 <!-- 使用 type="home" 属性设置首页，其他页面不需要设置，默认为page；推荐使用json5，更强大，且允许注释 -->
-<route lang="json5" type="home">
-{
-  style: {
-    navigationStyle: 'custom',
-    navigationBarTitleText: '首页',
-  },
-}
-</route>
+
+
 <template>
   <view class="flex flex-col justify-between items-center relative">
     <view class="w-full h-screen absolute inset-0">
       <image src="../../static/home/iPhone 13 mini_11 Pro_X (2).png"></image>
     </view>
 
-    <view
-      class="relative z-1 flex items-center"
-      :style="`margin-top:${barHeight + 10}rpx; height: ${navbar + 6}rpx;`"
-    >
+    <view class="relative z-1 flex items-center" :style="`margin-top:${barHeight + 10}rpx; height: ${navbar + 6}rpx;`">
       首页
     </view>
     <view class="relative z-1 mt-6rpx h-110rpx w-full flex justify-center items-end mb-28rpx">
