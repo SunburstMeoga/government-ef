@@ -39,10 +39,11 @@
   },
   "pages": [
     {
-      "path": "pages/index/leave_message",
+      "path": "pages/index/value_exile",
       "type": "home",
+      "layout": "default",
       "style": {
-        "navigationBarTitleText": "留言反馈"
+        "navigationBarTitleText": "增值流放详情"
       }
     },
     {
@@ -53,6 +54,10 @@
       }
     },
     {
+      "path": "pages/index/add_message",
+      "type": "page"
+    },
+    {
       "path": "pages/index/exchange_record",
       "type": "page"
     },
@@ -61,7 +66,23 @@
       "type": "page"
     },
     {
+      "path": "pages/index/instead_details",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/instead_repair",
+      "type": "page"
+    },
+    {
       "path": "pages/index/learning_growth",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/leave_message",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/low_carbon",
       "type": "page"
     },
     {

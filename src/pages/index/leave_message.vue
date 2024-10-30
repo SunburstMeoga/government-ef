@@ -1,10 +1,3 @@
-<route lang="json5" type="home">
-    {
-      style: {
-        navigationBarTitleText: '留言反馈',
-      },
-    }
-    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-slate-50 min-h-screen">
         <div class="flex w-686rpx flex-col mt-32rpx">

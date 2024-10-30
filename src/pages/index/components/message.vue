@@ -1,11 +1,3 @@
-<route lang="json5" type="page">
-    {
-      layout: 'default',
-      style: {
-        navigationBarTitleText: '',
-      },
-    }
-    </route>
 <template>
     <div class="w-686rpx py-28rpx flex flex-col items-center">
         <div class="flex w-630rpx flex-col justify-start items-center mx-auto">
