@@ -39,11 +39,11 @@
   },
   "pages": [
     {
-      "path": "pages/index/value_exile",
+      "path": "pages/index/cabin_distribution",
       "type": "home",
       "layout": "default",
       "style": {
-        "navigationBarTitleText": "增值流放详情"
+        "navigationBarTitleText": "小屋分布"
       }
     },
     {
@@ -55,6 +55,14 @@
     },
     {
       "path": "pages/index/add_message",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/carbon_details",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/carbon_rank",
       "type": "page"
     },
     {
@@ -103,6 +111,14 @@
     },
     {
       "path": "pages/index/study_result",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/value_exile",
+      "type": "page"
+    },
+    {
+      "path": "pages/index/waste_sorting",
       "type": "page"
     }
   ],

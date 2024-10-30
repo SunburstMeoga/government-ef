@@ -1,11 +1,3 @@
-<route lang="json5" type="home">
-    {
-      layout: 'default',
-      style: {
-        navigationBarTitleText: '增值流放详情',
-      },
-    }
-    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-gray-1">
         <div class="h-750rpx w-full">
@@ -23,7 +15,7 @@
             <div class="flex w-686rpx flex-col justify-center items-start">
                 <div class="text-slate-9 text-36rpx font-medium mb-16rpx">这里是任务名称</div>
                 <div class="flex justify-start items-center ">
-                    <div class="flex ml-16rpx text-emerald text-24rpx"> 已领取 </div>
+                    <div class="flex text-emerald text-24rpx"> 已领取 </div>
                 </div>
             </div>
         </div>
@@ -50,11 +42,18 @@
                 </div>
             </div>
         </div>
+        <div class="flex w-full h-200rpx bg-white justify-center items-start fixed bottom-0 left-0">
+            <div @click="handleSubmit()"
+                class="flex justify-center items-center text-emerald bg-slate-9 rounded-24rpx w-486rpx h-92rpx mt-20rpx">
+                接受任务
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { Divider, InputNumber } from 'wot-design-uni'
+import { Divider, InputNumber, useMessage } from 'wot-design-uni'
+const message = useMessage()
 
 const barHeight = ref(0)
 const navbar = ref(0)
@@ -72,6 +71,16 @@ let pictureItems = [
 ]
 let onChange = (e) => { //问题发生变化
     console.log(e)
+}
+let handleSubmit = () => {
+    message.alert({
+        msg: '已成功提交',
+        title: '成功',
+        confirmButtonText: '好的'
+    })
+        .then(() => {
+            console.log('点击了确定按钮')
+        })
 }
 onLoad(() => {
     uni.getSystemInfo({
