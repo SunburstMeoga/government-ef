@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="w-180rpx h-154rpx absolute -z-1 top-0 right-0">
-            <img src="../../../static/rank-num.png" alt="">
+            <img src="../../../static/home/rank-num.png" alt="">
         </div>
     </div>
 </template>

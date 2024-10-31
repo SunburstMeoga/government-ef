@@ -1,3 +1,12 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '积分记录',
+      navigationStyle: 'custom'
+
+      },
+    }
+    </route>
 <template>
     <div class="relative h-screen flex flex-col items-center">
         <div class="relative z-1 flex justify-center items-center w-full"

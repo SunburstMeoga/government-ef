@@ -1,3 +1,12 @@
+<route lang="json5">
+    {
+      layout: 'default',
+      style: {
+        navigationBarTitleText: '积分排名',
+        navigationStyle: 'custom'
+      },
+    }
+    </route>
 <template>
     <div class="">
         <div class="flex flex-col items-center relative h-586rpx">
@@ -10,7 +19,7 @@
             <div class="relative z-1 flex justify-center items-center w-full"
                 :style="`margin-top:${barHeight + 10}rpx; height: ${navbar + 6}rpx;`">
                 <div class="flex">积分排名</div>
-                <div class="absolute left-34rpx top-0 w-18rpx h-36rpx">
+                <div class="absolute left-34rpx top-0 w-18rpx h-36rpx" @click="goBack">
                     <img src="../../static/home/return.png" alt="" />
                 </div>
             </div>
@@ -24,7 +33,7 @@
                         {{ item.title }}
                     </div>
                 </div>
-                <div
+                <div @click="toRecord"
                     class="flex w-124rpx h-57rpx rounded-l-58rpx bg-white opacity-60 text-zinc-400 rounded-l-60rpx justify-center items-center text-24rpx">
                     积分记录</div>
 
@@ -75,6 +84,14 @@ const handleType = (item) => {
 }
 const barHeight = ref(0)
 const navbar = ref(0)
+let toRecord = () => {
+    uni.navigateTo({
+        url: '/pages/index/points_record'
+    });
+}
+let goBack = () => {
+    uni.goBack()
+}
 onLoad(() => {
     uni.getSystemInfo({
         success: (e) => {

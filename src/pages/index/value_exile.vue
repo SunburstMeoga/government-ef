@@ -1,3 +1,10 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '增值流放',
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-gray-1">
         <div class="h-750rpx w-full">
@@ -74,12 +81,14 @@ let onChange = (e) => { //问题发生变化
 }
 let handleSubmit = () => {
     message.alert({
-        msg: '已成功提交',
+        msg: '已成功接受该任务',
         title: '成功',
         confirmButtonText: '好的'
     })
         .then(() => {
-            console.log('点击了确定按钮')
+            uni.switchTab({
+                url: '/pages/index/index'
+            })
         })
 }
 onLoad(() => {

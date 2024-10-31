@@ -1,7 +1,16 @@
+<route lang="json5">
+    {
+      layout: 'default',
+      style: {
+        navigationBarTitleText: '替代修复'
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-slate-50">
         <div class="flex w-686rpx flex-col mt-32rpx">
-            <div class="flex rounded-24rpx  bg-white mb-28rpx min-h-217rpx" v-for="(item, index) in 10" :key="index">
+            <div @click="toDetails" class="flex rounded-24rpx  bg-white mb-28rpx min-h-217rpx"
+                v-for="(item, index) in 10" :key="index">
                 <Instead />
             </div>
         </div>
@@ -12,6 +21,11 @@
 import Instead from './components/instead.vue'
 const barHeight = ref(0)
 const navbar = ref(0)
+let toDetails = () => {
+    uni.navigateTo({
+        url: '/pages/index/instead_details'
+    })
+}
 onLoad(() => {
     uni.getSystemInfo({
         success: (e) => {

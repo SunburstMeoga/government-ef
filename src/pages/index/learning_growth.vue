@@ -1,3 +1,11 @@
+<route lang="json5">
+    {
+      layout: 'default',
+      style: {
+        navigationBarTitleText: '学习成长'
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-between items-center relative min-h-screen">
         <!-- <div class="test fixed left-0" :style="`border:1px solid red; top:${barHeight}rpx; height: ${navbar + 6}rpx;`">
@@ -19,7 +27,7 @@
                         </div>
 
                         <div class="w-full h-779rpx mb-218rpx">
-                            <swiper interval="300" circular :indicator-dots="false" :current="currentQue"
+                            <swiper interval="100" circular :indicator-dots="false" :current="currentQue"
                                 :autoplay="false" :loop="false" @change="onChange">
                                 <swiper-item v-for="(item, index) in questionList" :key="index"
                                     class="flex flex-col justify-start items-center">
@@ -86,11 +94,18 @@ let onChange = (e) => { //问题发生变化
     console.log(e)
 }
 let handleNextQue = () => { //点击下一题
+
     currentQue.value = ++currentQue.value
-    console.log(questionList.value.length - 1)
+    if (currentQue.value > questionList.value.length - 1) {
+        uni.navigateTo({
+            url: '/pages/index/study_result'
+        })
+    }
+    console.log(questionList.value.length - 1, currentQue.value)
+
 
 }
-let handlePreQue = () => { //点击下一题
+let handlePreQue = () => { //点击上一题
     currentQue.value = --currentQue.value
     console.log(questionList.value.length - 1)
 }

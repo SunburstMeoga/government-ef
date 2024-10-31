@@ -10,6 +10,9 @@
     <div class="flex flex-col justify-between items-center relative min-h-screen">
         <!-- <div class="test fixed left-0" :style="`border:1px solid red; top:${barHeight}rpx; height: ${navbar + 6}rpx;`">
             fasljdflskdfjkl</div> -->
+        <div @click="toExchangeRecord"
+            class="absolute right-0 top-160rpx text-zinc-4 bg-white text-24rpx rounded-l-57rpx w-124rpx h-57rpx z-3 flex justify-center items-center">
+            兑换记录</div>
         <div class="w-full min-h-screen fixed inset-0 -z-1">
             <image src="../../static/home/record-banner.png"></image>
         </div>
@@ -24,13 +27,14 @@
                     通过减碳、规范操作、学习、留言建议都可以或许积分哦
                 </div>
             </div>
+
             <div class="w-full absolute inset-0 -z-1">
                 <img src="../../static/home/record.png" alt="" />
             </div>
         </div>
 
         <div class="w-686rpx flex flex-wrap justify-between pb-200rpx">
-            <div class="w-329rpx mb-28rpx" v-for="(item, index) in 10" :key="index">
+            <div class="w-329rpx mb-28rpx" v-for="(item, index) in 10" :key="index" @click="toDetails">
                 <Product />
             </div>
         </div>
@@ -41,6 +45,16 @@
 import Product from './components/product.vue'
 const barHeight = ref(0)
 const navbar = ref(0)
+let toExchangeRecord = () => {
+    uni.navigateTo({
+        url: '/pages/index/exchange_record'
+    })
+}
+let toDetails = () => {
+    uni.navigateTo({
+        url: '/pages/index/product_details'
+    })
+}
 onLoad(() => {
     uni.getSystemInfo({
         success: (e) => {

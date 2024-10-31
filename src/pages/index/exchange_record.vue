@@ -1,3 +1,10 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '兑换记录',
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-slate-50">
         <div class="flex w-686rpx flex-col mt-32rpx">

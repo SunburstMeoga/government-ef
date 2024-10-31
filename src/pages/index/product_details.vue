@@ -1,8 +1,15 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '商品详情',
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-gray-1">
         <div class="h-750rpx w-full">
-            <swiper interval="300" circular indicator-dots="true" indicator-active-color="#fff" indicator-color="#ccc"
-                :current="currentProduct" @change="onChange">
+            <swiper interval="3000" autoplay loop circular indicator-dots="true" indicator-active-color="#fff"
+                indicator-color="#ccc" :current="currentProduct" @change="onChange">
                 <swiper-item v-for="(item, index) in pictureItems" :key="index"
                     class="flex flex-col justify-start items-center">
                     <div class="h-750rpx w-full">
@@ -59,7 +66,7 @@
                 </div>
             </div>
             <div class="w-full h-1rpx bg-zinc-1 mb-24rpx"></div>
-            <div
+            <div @click="handleSubmit"
                 class="flex justify-center items-center w-686rpx h-88rpx rounded-16rpx text-white text-28rpx bg-orange">
                 立即兑换</div>
         </div>
@@ -67,7 +74,8 @@
 </template>
 
 <script setup>
-import { Divider, InputNumber } from 'wot-design-uni'
+import { Divider, InputNumber, useMessage } from 'wot-design-uni'
+const message = useMessage()
 
 const barHeight = ref(0)
 const navbar = ref(0)
@@ -76,6 +84,7 @@ let productCount = ref(0)
 let productCountChange = ({ value }) => {
     console.log(value)
 }
+
 let pictureItems = [
     '../../static/home/product-details.png',
     '../../static/home/product-details.png',
@@ -83,6 +92,18 @@ let pictureItems = [
     '../../static/home/product-details.png',
     '../../static/home/product-details.png'
 ]
+let handleSubmit = () => {
+    message.alert({
+        msg: '兑换成功',
+        title: '成功',
+        confirmButtonText: '好的'
+    })
+        .then(() => {
+            uni.switchTab({
+                url: '/pages/index/index'
+            })
+        })
+}
 let onChange = (e) => { //问题发生变化
     console.log(e)
 }

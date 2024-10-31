@@ -1,3 +1,10 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '低碳活动',
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center  min-h-screen relative">
         <div class="w-full h-1684rpx absolute inset-0 -z-1 ">
@@ -70,7 +77,9 @@ let handleSubmit = () => {
         confirmButtonText: '好的'
     })
         .then(() => {
-            console.log('点击了确定按钮')
+            uni.switchTab({
+                url: '/pages/index/index'
+            })
         })
 }
 onLoad(() => {

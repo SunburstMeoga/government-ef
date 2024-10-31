@@ -1,3 +1,11 @@
+<route lang="json5">
+    {
+      layout: 'default',
+      style: {
+        navigationBarTitleText: '替代详情'
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center bg-gray-1">
         <div class="h-750rpx w-full">

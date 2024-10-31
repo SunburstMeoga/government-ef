@@ -1,3 +1,10 @@
+<route lang="json5">
+    {
+      style: {
+        navigationBarTitleText: '减碳排名',
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-start items-center">
         <div class="flex w-686rpx h-1596rpx mx-auto">
@@ -20,13 +27,24 @@ const filterItems = ref([
     { id: 2, title: '总榜' },
 ])
 const handleBottomItem = (item) => {
+    if (!item.router) {
+        message.alert({
+            msg: '提醒',
+            title: '正在开发，敬请期待',
+            confirmButtonText: '好的'
+        })
+            .then(() => {
+                console.log('点击了确定按钮')
+            })
+        return
+    }
     uni.navigateTo({
         url: item.router,
     })
 }
 const operatingTypes = ref([
-    { img: '../../static/home/bottom-1.png', router: '/pages/index/cabin_distribution' },
-    { img: '../../static/home/bottom-2.png', router: '' },
+    { img: '../../static/home/bottom-1.png', router: '' },
+    { img: '../../static/home/bottom-2.png', router: '/pages/index/cabin_distribution' },
     { img: '../../static/home/bottom-3.png', router: '' },
     { img: '../../static/home/bottom-4.png', router: '' },
 ])

@@ -1,3 +1,11 @@
+<route lang="json5">
+    {
+      layout: 'default',
+      style: {
+        navigationBarTitleText: '答题结果'
+      },
+    }
+    </route>
 <template>
     <div class="flex flex-col justify-between items-center relative min-h-screen">
         <!-- <div class="test fixed left-0" :style="`border:1px solid red; top:${barHeight}rpx; height: ${navbar + 6}rpx;`">

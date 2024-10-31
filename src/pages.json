@@ -39,6 +39,13 @@
   },
   "pages": [
     {
+      "path": "pages/login/index",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
       "path": "pages/index/index",
       "type": "home",
       "layout": "default",
@@ -55,8 +62,19 @@
       }
     },
     {
+      "path": "pages/about/user_manager",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "机构用户管理"
+      }
+    },
+    {
       "path": "pages/index/add_message",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "留言反馈"
+      }
     },
     {
       "path": "pages/index/cabin_distribution",
@@ -64,27 +82,48 @@
     },
     {
       "path": "pages/index/carbon_details",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": " "
+      }
     },
     {
       "path": "pages/index/carbon_rank",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "减碳排名"
+      }
     },
     {
       "path": "pages/index/exchange_record",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "兑换记录"
+      }
     },
     {
       "path": "pages/index/instead_details",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "替代详情"
+      }
     },
     {
       "path": "pages/index/instead_repair",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "替代修复"
+      }
     },
     {
       "path": "pages/index/learning_growth",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "学习成长"
+      }
     },
     {
       "path": "pages/index/leave_message",
@@ -92,7 +131,10 @@
     },
     {
       "path": "pages/index/low_carbon",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "低碳活动"
+      }
     },
     {
       "path": "pages/index/mall",
@@ -103,27 +145,49 @@
     },
     {
       "path": "pages/index/points_record",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "积分记录",
+        "navigationStyle": "custom"
+      }
     },
     {
-      "path": "pages/index/product_detials",
-      "type": "page"
+      "path": "pages/index/product_details",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "商品详情"
+      }
     },
     {
       "path": "pages/index/rank",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "积分排名",
+        "navigationStyle": "custom"
+      }
     },
     {
       "path": "pages/index/study_result",
-      "type": "page"
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "答题结果"
+      }
     },
     {
       "path": "pages/index/value_exile",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "增值流放"
+      }
     },
     {
       "path": "pages/index/waste_sorting",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "垃圾分类"
+      }
     }
   ],
   "subPackages": []
